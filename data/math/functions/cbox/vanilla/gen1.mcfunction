@@ -1,0 +1,12 @@
+execute if entity @s[type=minecraft:area_effect_cloud] run function math:cbox/vanilla/gen1/area_effect_cloud
+execute if entity @s[type=minecraft:interaction] run function math:cbox/vanilla/gen1/interaction
+execute if entity @s[type=minecraft:slime] run function math:cbox/vanilla/gen1/slime
+execute if entity @s[type=minecraft:magma_cube] run function math:cbox/vanilla/gen1/magma_cube
+execute if entity @s[type=minecraft:phantom] run function math:cbox/vanilla/gen1/phantom
+execute if entity @s[type=minecraft:armor_stand] run function math:cbox/vanilla/gen1/armor_stand
+execute if entity @s[type=minecraft:glow_item_frame] run function math:cbox/vanilla/gen1/item_frame
+execute if entity @s[type=minecraft:item_frame] run function math:cbox/vanilla/gen1/item_frame
+execute if entity @s[type=minecraft:painting] run function math:cbox/vanilla/gen1/painting
+execute if entity @s[type=minecraft:shulker] run function math:cbox/vanilla/gen1/shulker
+execute if entity @s[type=minecraft:player] run function math:cbox/vanilla/gen1/player
+execute if entity @s[type=minecraft:pufferfish] run function math:cbox/vanilla/gen1/pufferfish

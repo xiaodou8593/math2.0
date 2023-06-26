@@ -1,0 +1,14 @@
+#cbox的数据模板
+{
+	pos:[0.0d,0.0d,0.0d]
+	dxyz:[0.0d,0.0d,0.0d]
+}
+
+#cbox的实体对象
+scb <@s,x>
+scb <@s,y>
+scb <@s,z>
+scb <@s,d>
+scb <@s,h>
+scb <@s,l>
+scb <@s,dy>

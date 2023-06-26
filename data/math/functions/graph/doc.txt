@@ -1,0 +1,25 @@
+#图的数据模板
+{
+	nodes:[
+		{
+			name:"",
+			to:[1,2],
+			display:{
+				hide_name:1b,
+				item:{},
+				uvw:[0.0d,0.0d,0.0d]
+			}
+		}
+	],
+	pos:[0.0d,0.0d,0.0d],
+	rot:[0.0f,0.0f],
+	uvw_theta:0.0f
+}
+#物理模拟参数模板
+{
+	center:[0.0d,0.0d],
+	center_force:0.05d,
+	collision_r2:0.5d,
+	link_force:0.1d,
+	push_force:1.0d
+}

@@ -1,0 +1,14 @@
+#扇形的数据模板
+{
+	pos:[0.0d,0.0d,0.0d],
+	aplha:0.0f,
+	beta:0.0f,
+	r:0.0d
+}
+#扇形的临时对象
+scb <x,int>
+scb <y,int>
+scb <z,int>
+scb <sector_r,int>
+scb <sector_alpha,int>
+scb <sector_beta,int>

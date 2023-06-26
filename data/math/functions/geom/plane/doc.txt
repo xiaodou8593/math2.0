@@ -1,0 +1,3 @@
+#平面的临时对象
+{<x,int>,<y,int>,<z,int>}
+{<f0,int>,<f1,int>,<f2,int>}

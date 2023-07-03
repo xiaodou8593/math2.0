@@ -1,0 +1,2 @@
+#math:qrot/_print
+tellraw @a ["(qrot)xyzw: [",{"score":{"name":"qrot_x","objective":"int"}},{"text":","},{"score":{"name":"qrot_y","objective":"int"}},{"text":","},{"score":{"name":"qrot_z","objective":"int"}},{"text":","},{"score":{"name":"qrot_w","objective":"int"}},{"text":"]"}]

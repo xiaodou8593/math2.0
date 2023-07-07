@@ -1,4 +1,7 @@
 #math:_random
+# 进行一次随机数迭代
+# 输入随机数范围{<min,int>,<max,int>}
+# 输出<random,int>
 scoreboard players operation sstemp int = max int
 scoreboard players operation sstemp int -= min int
 scoreboard players add sstemp int 1

@@ -1,5 +1,6 @@
 #math:test/run
-summon item_display 0 11 0 {item:{id:"minecraft:dragon_head",Count:1b},Tags:["stmp","test"]}
-tp @e[tag=stmp,limit=1] ^ ^ ^2.5 ~ ~
-scoreboard players set @e[tag=stmp,limit=1] killtime 5
-tag @e remove stmp
+kill @e[tag=test]
+summon item_display ~ ~ ~ {item:{id:"minecraft:grass",Count:1b},Tags:["test"]}
+data merge entity @e[tag=test,limit=1] {transformation:{scale:[5.25f,5.25f,5.25f],translation:[-2.0f,0.0f,0.0f]},start_interpolation:0,interpolation_duration:20}
+
+scoreboard players set test int 0

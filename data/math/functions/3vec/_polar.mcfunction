@@ -1,4 +1,14 @@
 #math:3vec/_polar
+# 规整化三维向量
+# 输入：3vec{<3vec_x,int>,<3vec_y,int>,<3vec_z,int>}
+# 输出：正方体半边长到<stempd,int>
+# 输出：规整化后的三维向量{<3vec_x,int>,<3vec_y,int>,<3vec_z,int>}
+# 输出：筛离出的平面表面坐标{<@s,3vec_x>,<@s,3vec_y>,<@s,3vec_z>}
+# 为避免顶点或者边上的情况被规整化为(1,1,1)或(1,1,0)，可以在外部使用以下命令:
+# execute if score 3vec_x int = 3vec_z int run scoreboard players set 3vec_x int 0
+# execute if score 3vec_x int = 3vec_y int run scoreboard players set 3vec_x int 0
+# execute if score 3vec_y int = 3vec_z int run scoreboard players set 3vec_y int 0
+
 execute store result score @s 3vec_x run scoreboard players operation stempx int = 3vec_x int
 execute store result score @s 3vec_y run scoreboard players operation stempy int = 3vec_y int
 execute store result score @s 3vec_z run scoreboard players operation stempz int = 3vec_z int

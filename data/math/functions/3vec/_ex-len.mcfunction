@@ -1,7 +1,7 @@
 #math:3vec/_ex-rot
-#扩展函数：对3vec进行长度属性扩展
-#输入：3vec{<3vec_x,int>,<3vec_y,int>,<3vec_z,int>}
-#输出：3vec{<3vec_x,int>,<3vec_y,int>,<3vec_z,int>,<3vec_l,int>}
+# 扩展函数：对3vec进行长度属性扩展
+# 输入：3vec{<3vec_x,int>,<3vec_y,int>,<3vec_z,int>}
+# 输出：3vec{<3vec_x,int>,<3vec_y,int>,<3vec_z,int>,<3vec_l,int>}
 
 scoreboard players operation stempx int = 3vec_x int
 scoreboard players operation stempy int = 3vec_y int

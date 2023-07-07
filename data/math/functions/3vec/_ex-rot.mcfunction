@@ -1,7 +1,8 @@
 #math:3vec/_ex-rot
-#扩展函数：对3vec进行球坐标属性扩展
-#输入：3vec{<3vec_x,int>,<3vec_y,int>,<3vec_z,int>}
-#输出：3vec{<3vec_x,int>,<3vec_y,int>,<3vec_z,int>,<3vec_rot0,int>,<3vec_rot1,int>,<3vec_l,int>}
+# 扩展函数：对3vec进行球坐标属性扩展
+# 输入：3vec{<3vec_x,int>,<3vec_y,int>,<3vec_z,int>}
+# 输出：3vec{<3vec_x,int>,<3vec_y,int>,<3vec_z,int>,<3vec_rot0,int>,<3vec_rot1,int>,<3vec_l,int>}
+
 #获得单位方向向量以及朝向
 execute store result entity @s Pos[0] double 0.0001 run scoreboard players get 3vec_x int
 execute store result entity @s Pos[1] double 0.0001 run scoreboard players get 3vec_y int

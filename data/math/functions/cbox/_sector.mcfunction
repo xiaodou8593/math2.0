@@ -7,4 +7,4 @@ scoreboard players operation sector_r int = @s sector_r
 scoreboard players operation sector_beta int = @s sector_beta
 scoreboard players operation sector_alpha int = @s sector_alpha
 
-execute as @e[tag=math_marker,limit=1] run function math:cbox/sector/cal
+execute as 0-0-0-8593-0 run function math:cbox/sector/cal

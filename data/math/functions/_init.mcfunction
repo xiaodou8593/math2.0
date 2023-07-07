@@ -1,7 +1,9 @@
 #math:_init
+# 初始化数学库
+# 使用数学库之前必须手动执行
 
-#空间运算区块
-forceload add -1 -1 1 1
+#主世界设置
+execute in minecraft:the_overworld run function math:init_overworld
 
 #全局记分板
 scoreboard objectives add id dummy
@@ -49,9 +51,8 @@ scoreboard players set 100000000 int 100000000
 scoreboard players set 1000000000 int 1000000000
 scoreboard players set 1103515245 int 1103515245
 
-#世界实体
+#高频循环
 schedule function math:tick 1t replace
-function math:math_marker
 
 #数据模板
 data modify storage math:class cmp_rules set value {"a<b":0b,"a>b":1b,"a<=b":0b,"a>=b":1b}
@@ -60,10 +61,17 @@ data modify storage math:class items set value [{id:"minecraft:red_wool",Count:1
 
 #临时对象初始化
 data modify storage math:io item set value {}
+
 data modify storage math:io classify set value []
 scoreboard players set classify_cnt int 0
+
+data modify storage math:io set set value []
+data modify storage math:io set_tags set value []
+scoreboard players set set_cnt int 0
+
 data modify storage math:io rand_lst set value [8593,45316,3528,4112,43,296358,12936510]
 execute store result score rand_seed int run data get storage math:io rand_lst[0]
+
 scoreboard players set particle int 4
 scoreboard players set 3vec_n int 200
 

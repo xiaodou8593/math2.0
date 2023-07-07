@@ -1,7 +1,8 @@
 #math:3vec/_dsp
-#对3vec进行粒子显示
-#需要传入世界实体为执行者
-#输入：<particle,int>,3vec{<3vec_x,int>,<3vec_y,int>,<3vec_z,int>,<3vec_n,int>,<3vec_l,int>}
+# 对3vec进行粒子显示
+# 需要传入世界实体为执行者
+# 输入：<particle,int>,3vec{<3vec_x,int>,<3vec_y,int>,<3vec_z,int>,<3vec_n,int>,<3vec_l,int>}
+
 execute store result entity @s Pos[0] double 0.0001 run scoreboard players operation stemp0 int = 3vec_x int
 execute store result entity @s Pos[1] double 0.0001 run scoreboard players operation stemp1 int = 3vec_y int
 execute store result entity @s Pos[2] double 0.0001 run scoreboard players operation stemp2 int = 3vec_z int

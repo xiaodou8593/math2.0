@@ -65,10 +65,6 @@ data modify storage math:io item set value {}
 data modify storage math:io classify set value []
 scoreboard players set classify_cnt int 0
 
-data modify storage math:io set set value []
-data modify storage math:io set_tags set value []
-scoreboard players set set_cnt int 0
-
 data modify storage math:io rand_lst set value [8593,45316,3528,4112,43,296358,12936510]
 execute store result score rand_seed int run data get storage math:io rand_lst[0]
 
@@ -101,3 +97,6 @@ function math:geom/init
 
 #高精度模块初始化
 function math:hpo/init
+
+#集合初始化
+function math:set/init

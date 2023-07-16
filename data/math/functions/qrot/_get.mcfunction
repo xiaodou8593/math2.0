@@ -1,3 +1,4 @@
+#math:qrot/_get
 scoreboard players operation qrot_v0 int = @s qrot_v0
 scoreboard players operation qrot_v1 int = @s qrot_v1
 scoreboard players operation qrot_v2 int = @s qrot_v2

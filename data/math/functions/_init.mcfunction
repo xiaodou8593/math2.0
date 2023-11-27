@@ -3,7 +3,7 @@
 # 使用数学库之前必须手动执行
 
 #主世界设置
-execute in minecraft:the_overworld run function math:init_overworld
+execute in minecraft:overworld run function math:init_overworld
 
 #全局记分板
 scoreboard objectives add id dummy
